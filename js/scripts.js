@@ -20,7 +20,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -50,5 +49,28 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    // Read more functionality
+    function toggleReadMore() {
+        const moreContent = document.querySelector('.more-content');
+        const dots = document.querySelector('.dots');
+        const readMoreLink = document.querySelector('.read-more-link');
+
+        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'inline';
+            dots.style.display = 'none';
+            readMoreLink.innerText = 'Read less';
+        } else {
+            moreContent.style.display = 'none';
+            dots.style.display = 'inline';
+            readMoreLink.innerText = 'Read more';
+        }
+    }
+
+    // Add event listener for the Read More link
+    const readMoreLink = document.querySelector('.read-more-link');
+    if (readMoreLink) {
+        readMoreLink.addEventListener('click', toggleReadMore);
+    }
 
 });
