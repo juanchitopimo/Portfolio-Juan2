@@ -598,6 +598,31 @@ progress {
   content: "— ";
 }
 
+/* logos */
+.logo-size {
+  max-width: 40px; /* Default size for small screens */
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .logo-size {
+    max-width: 60px; /* Medium size for tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-size {
+    max-width: 70px; /* Slightly larger size for desktops */
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-size {
+    max-width: 80px; /* Larger size for large screens */
+  }
+}
+
+/* images  */
 .img-fluid {
   max-width: 100%;
   height: auto;
