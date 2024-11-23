@@ -598,6 +598,16 @@ progress {
   content: "— ";
 }
 
+/* logos django */
+
+.django-logo {
+  width: 130px; /* Adjust width specifically for Django logo */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #092e20; /* Optional: Add a border for emphasis */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
 /* logos */
 .logo-size {
   max-width: 40px; /* Default size for small screens */
@@ -11100,3 +11110,4 @@ html {
 .custom-margin {
   margin-bottom: 0px;
 }
+
